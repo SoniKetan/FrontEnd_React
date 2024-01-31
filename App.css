@@ -1,6 +1,10 @@
-.main-header {
+.main_header {
   text-align: center;
+  padding: 5px;
+  color: darkblue;
+  font-size: xx-large;
   font-style: oblique;
-  border-bottom: 3px solid lightslategrey;
-  padding: 5px
+  margin: 10px;
+  border-bottom: 5px solid lightslategrey;
+  font-weight: 700;
 }

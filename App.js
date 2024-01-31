@@ -1,51 +1,70 @@
-import ListOfAllExp from "./Comp/ListOfAllExp";
+import ALlExpenses from "./Components/AllExpenses";
 import "./App.css"
+
 function App() {
-
-  let expObj = [
+  let expObjects = [
     {
-      expName: "Food",
-      expPrice: 250,
-      expDate: new Date().getFullYear()
+      date: new Date(),
+      name: "Car Insurance",
+      amount: 2150,
+      locationOfExp: 'raisen'
     },
 
     {
-      expName: "Food",
-      expPrice: 250,
-      expDate: new Date().getFullYear()
+      date: new Date(),
+      name: "Bike Insurance",
+      amount: 1200,
+      locationOfExp: 'kerala'
     },
 
 
     {
-      expName: "Food",
-      expPrice: 250,
-      expDate: new Date().getFullYear()
+      date: new Date(),
+      name: "Truck Insurance",
+      amount: 2554,
+      locationOfExp: 'hydrabad'
+    },
+
+    {
+      date: new Date(),
+      name: "Auto Insurance",
+      amount: 3605,
+      locationOfExp: 'mysure'
     }
 
   ]
 
+
+
   return <div>
-    <h1 className="main-header"> Expense Items </h1>
-    <ListOfAllExp
-      expName={expObj[0].expName}
-      expPrice={expObj[0].expPrice}
-      expDate={expObj[0].expDate}>
-    </ListOfAllExp>
+    <h1 className="main_header"> Expense Tracker App </h1>
+    <ALlExpenses
+      expDate={expObjects[0].date}
+      expName={expObjects[0].name}
+      expPrice={expObjects[0].amount}
+      expLocation={expObjects[0].locationOfExp}
+    ></ALlExpenses>
 
-    <ListOfAllExp
-      expName={expObj[1].expName}
-      expPrice={expObj[1].expPrice}
-      expDate={expObj[1].expDate}>
-    </ListOfAllExp>
+    <ALlExpenses
+      expDate={expObjects[1].date}
+      expName={expObjects[1].name}
+      expPrice={expObjects[1].amount}
+      expLocation={expObjects[1].locationOfExp}
+    ></ALlExpenses>
 
-    <ListOfAllExp
-      expName={expObj[2].expName}
-      expPrice={expObj[2].expPrice}
-      expDate={expObj[2].expDate}>
-    </ListOfAllExp>
+    <ALlExpenses
+      expDate={expObjects[2].date}
+      expName={expObjects[2].name}
+      expPrice={expObjects[2].amount}
+      expLocation={expObjects[2].locationOfExp}
+    ></ALlExpenses>
 
-
-
+    <ALlExpenses
+      expDate={expObjects[3].date}
+      expName={expObjects[3].name}
+      expPrice={expObjects[3].amount}
+      expLocation={expObjects[3].locationOfExp}
+    ></ALlExpenses>
   </div>
 }
 
