@@ -1,0 +1,24 @@
+.main-div {
+    margin: 20px;
+}
+
+.main-header {
+    color: red;
+}
+
+.foodExp {
+    background-color: aqua;
+    padding: 10px;
+}
+
+.petrolExp {
+    background-color: rgb(50, 100, 100);
+    padding: 10px;
+    color: white;
+}
+
+.movieExp {
+    background-color: rgb(7, 99, 99);
+    padding: 10px;
+    color: white;
+}

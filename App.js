@@ -1,11 +1,9 @@
-import Items from "./Components/Items";
+import ListOfExp from "./Compos/ListOfExp";
 
 function App() {
   return <div>
-    <h1> Expense Items </h1>
-    <Items></Items>
+    <ListOfExp></ListOfExp>
   </div>
-
 }
 
 export default App;
