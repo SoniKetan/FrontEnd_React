@@ -1,4 +1,4 @@
-import ALlExpenses from "./Components/AllExpenses";
+import AllExpenses from "./Components/AllExpenses";
 import "./App.css"
 
 function App() {
@@ -38,33 +38,33 @@ function App() {
 
   return <div>
     <h1 className="main_header"> Expense Tracker App </h1>
-    <ALlExpenses
+    <AllExpenses
       expDate={expObjects[0].date}
       expName={expObjects[0].name}
       expPrice={expObjects[0].amount}
       expLocation={expObjects[0].locationOfExp}
-    ></ALlExpenses>
+    ></AllExpenses>
 
-    <ALlExpenses
+    <AllExpenses
       expDate={expObjects[1].date}
       expName={expObjects[1].name}
       expPrice={expObjects[1].amount}
       expLocation={expObjects[1].locationOfExp}
-    ></ALlExpenses>
+    ></AllExpenses>
 
-    <ALlExpenses
+    <AllExpenses
       expDate={expObjects[2].date}
       expName={expObjects[2].name}
       expPrice={expObjects[2].amount}
       expLocation={expObjects[2].locationOfExp}
-    ></ALlExpenses>
+    ></AllExpenses>
 
-    <ALlExpenses
+    <AllExpenses
       expDate={expObjects[3].date}
       expName={expObjects[3].name}
       expPrice={expObjects[3].amount}
       expLocation={expObjects[3].locationOfExp}
-    ></ALlExpenses>
+    ></AllExpenses>
   </div>
 }
 
